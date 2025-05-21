@@ -3,6 +3,8 @@ import { NextRequest } from "next/server";
 
 export default withAuth(
   async function middleware(request: NextRequest) {
+
+    console.log("request", request.nextUrl.pathname);
   },
   {
     isReturnToCurrentPage: true,
